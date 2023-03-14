@@ -1,0 +1,118 @@
+{ "segments": {
+        "above": [{
+                "left": [
+                    {
+                        "function": "powerline.segments.common.net.hostname"
+                    },
+                    {
+                        "function": "powerline.segments.common.net.internal_ip",
+                        "priority": 30
+                    },
+                    {
+                        "function": "powerline.segments.common.env.cwd",
+                        "priority": 20,
+                        "before": " ",
+                        "args": {
+                            "use_shortened_path": true
+                        }
+                    },
+                    {
+                        "function": "powerline_gitstatus.gitstatus",
+                        "priority": 40,
+                        "draw_soft_divider": false,
+                        "draw_hard_divider": true,
+                        "args": {
+                            "show_tag": "exact",
+                            "formats": {
+                                "branch": " {}",
+                                "tag": " ﮉ {}",
+                                "untracked": "  {}",
+                                "changed": "  {}",
+                                "staged": "  {}",
+                                "stashed": "  {}",
+                                "ahead": "  {}",
+                                "behind": "   {}"
+                            }
+                        }
+                    },
+                    {
+                        "function": "powerline.segments.common.env.virtualenv",
+                        "before": " "
+                    },
+                    {
+                        "type": "string",
+                        "priority": 50,
+                        "highlight_groups": ["background"],
+                        "draw_hard_divider": true,
+                        "width": "auto"
+                    },
+                    {
+                        "function": "powerline_kubernetes.kubernetes",
+                        "priority": 60,
+                        "display": true,
+                        "args": {
+                            "show_kube_logo": true,
+                            "show_cluster": true,
+                            "show_namespace": true,
+                            "show_default_namespace": true
+                        }
+                    },
+                    {
+                        "function": "powerline.segments.common.mail.email_imap_alert",
+                        "display": false,
+                        "priority": 80,
+                        "args": {
+                            "username_variable": "MAIL_USER",
+                            "password_variable": "MAIL_PASS",
+                            "server_variable": "MAIL_SERVER",
+                            "port_variable": "MAIL_PORT",
+                            "use_ssl": false,
+                            "interval": 60
+                        }
+
+                    },
+                    {
+                        "function": "powerline.segments.common.bat.battery",
+                        "priority": 70,
+                        "draw_soft_divider": false,
+                        "args": {
+                            "gamify": true,
+                            "full_heart": " ♥",
+                            "empty_heart": " ",
+                            "online": "",
+                            "offline": "ﮤ"
+                        }
+
+                    },
+                    {
+                        "function": "powerline.segments.common.time.date",
+                        "draw_soft_divider": false,
+                        "args": {
+                            "format": " %H:%M"
+                        }
+                    }
+                ]
+        }
+        ],
+        "left": [
+            {
+                "function": "powerline.segments.shell.last_pipe_status",
+                "draw_soft_divider": false
+            },
+            {
+                "type": "string",
+                "name": "newline_prompt",
+                "contents": "﬌",
+                "highlight_groups": ["newline_prompt"],
+                "draw_soft_divider": false,
+                "draw_hard_divider": true
+            }
+        ],
+        "right": [
+            {
+                "function": "powerline.segments.common.vcs.branch",
+                "display": false
+            }
+        ]
+    }
+}
