@@ -1,8 +1,5 @@
-# Dot Files for `onboardme`
-
-These started as my personal dot files, but then they became the sensible defaults for
-[`onboardme`](https://github.com/jessebot/onboardme), which started out as a script
-to manage my dot files :shrug:
+# OLD Dot Files for `onboardme`
+These files are no longer maintained but may be of use to someone :)
 
 These directories/files are installed to your home directory and follow the [XDG Base Directory Spec] as closely as possible.
 
@@ -12,114 +9,6 @@ These directories/files are installed to your home directory and follow the [XDG
   <summary><code>.config</code></summary>
 
   <blockquote>
-
-  <details>
-    <summary><code>asciinema</code></summary>
-
-  <blockquote>
-
-  File: [`~/.config/asciinema/config`](.config/asciinema/config)
-
-  Config file for [`asciinema`][asciinema], a lightweight, purely text-based
-  approach to terminal recording. Currently it just sets the shell command to
-  be `/bin/bash --login`, which loads your bash variables. This could be changed
-  to a different shell and their equivilent.
-
-  </blockquote>
-
-  </details>
-
-  <details>
-    <summary><code>bat</code></summary>
-
-  <blockquote>
-
-  File: [`~/.config/bat/config`](.config/bat/config)
-
-  Config file for `bat`[bat], a `cat` replacement with sytax highlighting and
-  git support. Currently the config file:
-  - sets a default theme
-  - enable italic text
-  - maps Chart.lock files to YAML syntax (this is for the helm charts for k8s)
-
-  The goal is to have a spacechalk-like theme soon :)
-
-  </blockquote>
-
-  </details>
-
-  <details>
-    <summary><code>bash</code></summary>
-
-  <blockquote>
-
-  Files
-  - [`~/.config/bash/alias.sh`](.config/bash/alias.sh)
-  - [`~/.config/bash/completion.sh`](.config/bash/completion.sh)
-  - [`~/.config/bash/history.sh`](.config/bash/history.sh)
-  - [`~/.config/bash/iterm2_shell_integration.sh`](.config/bash/iterm2_shell_integration.sh)
-  - [`~/.config/bash/k8s.sh`](.config/bash/k8s.sh)
-  - [`~/.config/bash/path.sh`](.config/bash/path.sh)
-  - [`~/.config/bash/minimal.sh`](.config/bash/minimal.sh)
-  - [`~/.config/bash/text_editing.sh`](.config/bash/text_editing.sh)
-
-  #### [`~/.config/bash/alias.sh`](.config/bash/alias.sh)
-  a config file to organize all our BASH aliases
-
-  #### [`~/.config/bash/completion.sh`](.config/bash/completion.sh)
-  enable tab completion
-
-  #### [`~/.config/bash/history.sh`](.config/bash/history.sh)
-  - sets history to be in `~/.local/state/bash/history`
-  - sets default history size
-  - don't log duplicate history lines
-
-  #### [`iterm2_shell_integration.sh`](.config/bash/iterm2_shell_integration.sh)
-  sets up [iterm2] shell stuff
-
-  #### [`~/.config/bash/text_editing.sh`](.config/bash/text_editing.sh)
-  sets [neovim] as default text editor, or [vim] if neovim is not present
-
-  #### [`~/.config/bash/k8s.sh`](.config/bash/k8s.sh)
-  kubernetes defaults:
-  - set pathing for [`krew`][krew], a plugin manager for [`kubectl`][kubectl].
-  - helpful sensible aliases such as: `kg` for `kubectl get`
-
-  #### [`~/.config/bash/path.sh`](.config/bash/path.sh)
-  - set [XDG Base Directory Spec]
-  - set pathing for golang and python
-  - set pathing for home brew
-
-  #### [`~/.config/bash/text_editing.sh`](.config/bash/text_editing.sh)
-  - fix how less handles non-text input files
-  - change the default colors for less used in man pages
-  - changes default pagers used when file is too long for catting
-
-  </blockquote>
-
-  </details>
-
-  <details>
-    <summary><code>fastfetch</code></summary>
-
-  <blockquote>
-
-  File: [`~/.config/fastfetch/config.conf`](.config/fastfetch/config.conf)
-
-  Config file for [fastfetch], is a neofetch-like tool for fetching system information and displaying them in a pretty way. It is written in pure c, with performance and customizability in mind. Currently, Linux, Android, FreeBSD, MacOS and Windows 7+ are supported.
-
-  Our current configuration default prints a dog on a computer using the iterm2
-  image protocol, but you could also change that to be sixel if you wanted.
-
-  We also provide a couple of basic presets in this dir:
-  `$XDG_DATA_HOME/.local/share/fastfetch/presets`
-
-  You can also change the configuration to show more data or less on the right
-  side.
-
-  </blockquote>
-
-  </details>
 
   <details>
     <summary><code>gh</code></summary>
@@ -812,12 +701,7 @@ onboardme --git_url https://github.com/your_username/dot_files --git_branch main
 <!-- ♡  ♡  ♡  ♡  ♡  ♡  ♡  ♡  ♡  Link References ♡  ♡  ♡  ♡  ♡  ♡  ♡  ♡  ♡ -->
 
 <!-- general -->
-[asciinema]: https://asciinema.org/ "asciinema"
-[bat]: https://github.com/sharkdp/bat#configuration-file "bat - cat with wings"
-[BASH]: https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer) "BASH"
 [bw]: https://bitwarden.com/help/cli "bitwarden CLI"
-[github-cli]: https://cli.github.com/ "github cli"
-[fastfetch]: https://github.com/LinusDierheimer/fastfetch "fastfetch"
 [powerline]: https://github.com/powerline/powerline "powerline"
 [rich-cli]: https://github.com/Textualize/rich-cli "rich cli"
 [sixel]: https://en.wikipedia.org/wiki/Sixel "sixel"
@@ -860,9 +744,6 @@ onboardme --git_url https://github.com/your_username/dot_files --git_branch main
 [airline]: https://github.com/vim-airline/vim-airline "airline"
 [ale]: https://github.com/dense-analysis/ale "ale: asynchonous linting engine"
 [dashboard]: https://github.com/glepnir/dashboard-nvim "dashboard.nvim"
-[packer]: https://github.com/wbthomason/packer.nvim "neovim packer"
-[neovim]: https://neovim.io/ "neovim, vim based text editor"
-[nvim-tree]: https://github.com/nvim-tree/ "nvim-tree"
 [telescope]: https://github.com/nvim-telescope/telescope.nvim "telescope.nvim"
 [tree-sitter]: https://github.com/nvim-treesitter/nvim-treesitter "nvim-treesitter"
 [vim]: https://www.vim.org/ "vim, a text editor"
