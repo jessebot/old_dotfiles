@@ -1,5 +1,5 @@
 # OLD Dot Files for `onboardme`
-These files are no longer maintained but may be of use to someone :)
+These files are no longer maintained but may be of use to someone :) Checkout [jessebot/dot_files](https://github.com/jessebot/dot_files) for my current dot files :)
 
 These directories/files are installed to your home directory and follow the [XDG Base Directory Spec] as closely as possible.
 
