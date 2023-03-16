@@ -268,22 +268,11 @@ These directories/files are installed to your home directory and follow the [XDG
   </details>
 
   <details>
-    <summary><code>share</code></summary>
-
-  <blockquote>
-
-  Mostly READMEs to generate directory structure, but also some fastfetch preset configs.
-
-  </blockquote>
-
-  </details>
-
-  <details>
     <summary><code>state</code></summary>
 
   <blockquote>
 
-  This directory and the director[y/ies]/file(s) within it are specifically to auto-generate directory structure so that XDG spec is enforced with tools that only loosely enforce it.
+  This directory and the directories/files within it are specifically to auto-generate directory structure so that XDG spec is enforced with tools that only loosely enforce it.
 
   </blockquote>
 
@@ -291,28 +280,6 @@ These directories/files are installed to your home directory and follow the [XDG
 
 </details>
 
-<details>
-  <summary><code>.gitignore</code></summary>
-
-  <blockquote>
-
-  Git ignore file for all sorts of things in your home directory that should
-  never get committed if this repo is used as your home directory dot files.
-
-  </blockquote>
-
-</details>
-
-<details>
-  <summary><code>.hushlogin</code></summary>
-
-  <blockquote>
-
-  This just silences the last login message of shells.
-
-  </blockquote>
-
-</details>
 
 <details>
   <summary><code>.zshrc</code></summary>
